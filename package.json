@@ -1,13 +1,17 @@
 {
   "name": "astro-and-svelte-component",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "type": "module",
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./astro": "./src/MyAstroComponent.astro",
+    "./react": "./src/MySvelteComponent.svelte"
   },
   "files": [
     "src",
-    "index.ts"
+    "index.ts",
+    "MyComponent.astro",
+    "MySvelteComponent.svelte"
   ],
   "keywords": [
     "astro-component"
@@ -15,7 +19,8 @@
   "scripts": {},
   "devDependencies": {
     "astro": "^3.0.8",
-    "ts-plugin": "^0.1.5"
+    "ts-plugin": "^0.1.5",
+    "@astrojs/svelte": "^4.0.0"
   },
   "peerDependencies": {
     "astro": "^2.0.0-beta.0"
